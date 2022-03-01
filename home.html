@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logowebsekai.png" style="width: 40px; height: 40px; margin-right: 10px;">
+            <h3><i>WEBSEKAI</i></h3>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+        <ul class="navlist">
+            <li><a href="#">
+                <i class='bx bx-home' ></i>
+                <span class="links_name">Home</span>
+            </a></li>
+            <li><a href="#">
+                <i class='bx bxs-user' ></i>
+                <span class="links_name">User</span>
+            </a></li>
+            <li><a href="#">
+                <i class='bx bxs-category'></i>
+                <span class="links_name">Category</span>
+            </a></li>
+            <li><a href="#">
+                <i class='bx bxs-shopping-bag' ></i>
+                <span class="links_name">Collections</span>
+            </a></li>
+            <li><a href="#">
+                <i class='bx bxs-bookmark-star' ></i>
+                <span class="links_name">Bookmarks</span>
+            </a></li>
+            <li><a href="#">
+                <i class='bx bxs-group' ></i>
+                <span class="links_name">Community</span>
+            </a></li>
+            <li><a href="#">
+                <i class='bx bxs-calendar' ></i>
+                <span class="links_name">Jadwal Rilis</span>
+            </a></li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="ical.jpg">
+                    <div class="name_container">
+                        <div class="name">Dynavx</div>
+                        <div class="paket">Premium</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="konten">
+        <div class="search"><input type="text" placeholder="Search..."></div>
+        <div class="levi"><img src="aot.png" alt="levi"></div>
+        <div class="text"></div>
+    </div>
+    <div class="social">
+        Social
+    </div>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
